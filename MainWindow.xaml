@@ -1,0 +1,19 @@
+<Window x:Class="WpfApp2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp2"
+        mc:Ignorable="d"
+        Title="Color Changer" Height="450" Width="800">
+    <Grid>
+        <Button x:Name="changeColorButton" Click="Button_Click" HorizontalAlignment="Center" VerticalAlignment="Center" Width="200" Height="60" BorderBrush="#FF3D5D99" Background="#FF4F81BD">
+            <Button.Content>
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
+                    <Image Source="color_palette.png" Width="30" Height="30" Margin="0,0,5,0"/>
+                    <TextBlock Text="Change Color" Foreground="White" FontSize="18" FontWeight="Bold"/>
+                </StackPanel>
+            </Button.Content>
+        </Button>
+    </Grid>
+</Window>
